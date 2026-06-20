@@ -8,52 +8,73 @@
 
 # Dataset identity (required)
 # These form the first three segments of every key
-country: ""   # ISO 3166-1 alpha-2 code (e.g., "ch", "de", "us")
-provider: ""  # short identifier (e.g., "adecco", "seco")
-dataset: ""   # short identifier (e.g., "sjmi", "gdp")
+country: "ch"   # ISO 3166-1 alpha-2 code (e.g., "ch", "de", "us")
+provider: "fso"  # short identifier (e.g., "adecco", "seco")
+dataset: "pop"   # short identifier (e.g., "sjmi", "gdp")
 
 # Dataset title (required)
 # At minimum, provide English. Add other languages as needed.
 title:
-  en: ""
-  # de: ""
-  # fr: ""
+  en: "Demographic balance of the permanent resident population, 1861-2018"
+  de: "Bilanz der ständigen Wohnbevölkerung, 1861-2018"
+  fr: "Bilan de la population résidante permanente, de 1861 à 2018"
+  it: "Bilancio della popolazione residente permanente, 1861-2018"
 
 # Data source name (required)
 source_name:
-  en: ""
-  # de: ""
+  en: "FSO (BEVNAT, ESPOP, STATPOP)"
+  de: "BFS (BEVNAT, ESPOP, STATPOP)"
+  fr: "OFS (BEVNAT, ESPOP, STATPOP)"
+  it: "UST (BEVNAT, ESPOP, STATPOP)"
 
 # URL to original data source (required)
-source_url: "https://"
+source_url: "https://www.bfs.admin.ch/bfs/de/home/statistiken/bevoelkerung/stand-entwicklung/bevoelkerung.assetdetail.9486043.html"
 
 # Data frequency (required)
 # D = daily, W = weekly, M = monthly, Q = quarterly, Y = yearly, I = irregular
-dataset_frequency: "M"
+dataset_frequency: "Y"
 
 # Units of measurement
 # Use "all" if uniform across variables, or specify per variable key
 units:
   all:
-    en: ""
+    en: "Person"
+    de: "Person"
+    fr: "Personne"
+    it: "Persona"
 
 # Aggregation method for temporal aggregation
 # Valid values: mean, sum, last, first
 aggregate:
-  all: "mean"
+  all: "sum"
 
 # Dimension order (left to right in the key, after country.provider.dataset)
-dim_order: []
+dim_order: [
+  "count"
+]
 
 # Hierarchical structure of dimensions
 # Nest dimensions according to your key structure
-hierarchy: {}
+hierarchy:
+  count:
+    npop: ~
 
 # Human-readable labels for dimensions and their values
 # dimnames: labels for dimension names
 # <dimension_name>: labels for values within that dimension
 labels:
-  dimnames: {}
+  dimnames:
+    count:
+      en: "Population on 1 January"
+      de: "Bevölkerungsstand am 1. Januar"
+      fr: "État de la population au 1er janvier"
+      it: "Stato della popolazione al 1° gennaio"
+  count:
+    npop:
+      en: "Demographic balance of population"
+      de: "Bilanz der Wohnbevölkerung"
+      fr: "Bilan de la population"
+      it: "Bilancio della popolazione"
 
 
 # update checksum is empty in the beginning

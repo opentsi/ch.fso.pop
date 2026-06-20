@@ -1,0 +1,55 @@
+{
+  "country": "ch",
+  "provider": "fso",
+  "dataset": "pop",
+  "title": {
+    "en": "Demographic balance of the permanent resident population, 1861-2018",
+    "de": "Bilanz der ständigen Wohnbevölkerung, 1861-2018",
+    "fr": "Bilan de la population résidante permanente, de 1861 à 2018",
+    "it": "Bilancio della popolazione residente permanente, 1861-2018"
+  },
+  "source_name": {
+    "en": "FSO (BEVNAT, ESPOP, STATPOP)",
+    "de": "BFS (BEVNAT, ESPOP, STATPOP)",
+    "fr": "OFS (BEVNAT, ESPOP, STATPOP)",
+    "it": "UST (BEVNAT, ESPOP, STATPOP)"
+  },
+  "source_url": "https://www.bfs.admin.ch/bfs/de/home/statistiken/bevoelkerung/stand-entwicklung/bevoelkerung.assetdetail.9486043.html",
+  "dataset_frequency": "Y",
+  "units": {
+    "all": {
+      "en": "Person",
+      "de": "Person",
+      "fr": "Personne",
+      "it": "Persona"
+    }
+  },
+  "aggregate": {
+    "all": "sum"
+  },
+  "dim_order": "count",
+  "hierarchy": {
+    "count": {
+      "npop": {}
+    }
+  },
+  "labels": {
+    "dimnames": {
+      "count": {
+        "en": "Population on 1 January",
+        "de": "Bevölkerungsstand am 1. Januar",
+        "fr": "État de la population au 1er janvier",
+        "it": "Stato della popolazione al 1° gennaio"
+      }
+    },
+    "count": {
+      "npop": {
+        "en": "Demographic balance of population",
+        "de": "Bilanz der Wohnbevölkerung",
+        "fr": "Bilan de la population",
+        "it": "Bilancio della popolazione"
+      }
+    }
+  },
+  "update_checksum": "ebdbba6ed9b724cf64c744afc3d0b9635b93f3c72d46e010a50e7b26330c0b13"
+}
