@@ -1,7 +1,7 @@
 
 # ch.fso.pop
 
-[![dataset](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/opentsi/ch.fso.ipi/main/data-raw/shield.json)](https://github.com/opentsi/ch.fso.ipi/actions/workflows/update_data.yaml)
+[![dataset](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/opentsi/ch.fso.pop/main/data-raw/shield.json)](https://github.com/opentsi/ch.fso.pop/actions/workflows/update_data.yaml)
 
 The ch.fso.pop package provides versioned time series data and their
 meta information for scientific research. In addition, the package
